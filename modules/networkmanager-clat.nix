@@ -1,8 +1,17 @@
 {
   config,
   pkgs,
+  nixpkgs-unstable,
   ...
-}: {
+}:
+# Import nixpkgs-unstable
+# (we don't use it yet since we're still building from source as the
+# nixpkgs release doesn't seem to have the CLAT working)
+let
+  unstable = import nixpkgs-unstable {
+    system = pkgs.system;
+  };
+in {
   # Horrible hack to create a dispatcher to enable CLAT every time a connection
   # comes up since networkmanager.settings doesn't seem to accept settings that
   # only exist in the upstream dev branch
@@ -31,6 +40,9 @@
     ];
   };
 
+  # Enable NetworkManager
+  networking.networkmanager.enable = true;
+
   # Override NetworkManager with the latest commit from the Git HEAD
   #
   # I originally went with the commit which merged the original CLAT PR but there's
@@ -40,8 +52,8 @@
       domain = "gitlab.freedesktop.org";
       owner = "NetworkManager";
       repo = "NetworkManager";
-      rev = "871da67916cd86d6a99c32f8d47b413fd16d68c6";
-      hash = "sha256-PEWl0ZB9ok+kXQHDPd08Cp7iVCBdez66bbxx/nRY618=";
+      rev = "128b49fe2122d297e7c51e73834a269b6730399a";
+      hash = "sha256-GfepLaNLg/V1w4zpV1sMyGKweNjL2lGzoIoqSOS53JM=";
     };
 
     # Patched version of the nixpkgs upstream fix-paths.patch for the udev rules

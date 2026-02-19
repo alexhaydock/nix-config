@@ -2,6 +2,7 @@
   config,
   pkgs,
   nixpkgs,
+  nixpkgs-unstable,
   home-manager,
   ...
 }: {
