@@ -7,6 +7,7 @@
         bierner.markdown-mermaid
         redhat.vscode-yaml
         yzhang.markdown-all-in-one
+        jnoortheen.nix-ide
       ];
     };
   };

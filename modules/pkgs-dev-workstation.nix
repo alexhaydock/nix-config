@@ -11,6 +11,7 @@
       conntrack-tools
       devenv # https://devenv.sh/
       diffoscope # Compare files to find out where they differ for Reproducible Build work
+      direnv
       easytag # GUI based audio file tagger
       element-desktop
       feishin # Navidrome client
@@ -36,7 +37,9 @@
       pre-commit
       psmisc # provides fuser, killall, pstree, etc
       rpi-imager
+      rpmextract
       signal-desktop
+      socat
       sshfs
       usbutils # lsusb
       vhs # For creating shell recordings for documentation
