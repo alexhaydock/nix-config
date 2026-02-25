@@ -4,8 +4,7 @@
   ...
 }: let
   unstable = import nixpkgs-unstable {
-    inherit (pkgs) system;
-    config.allowUnfree = true;
+    system = pkgs.system;
   };
 in {
   users.users.user.packages = with pkgs; [
