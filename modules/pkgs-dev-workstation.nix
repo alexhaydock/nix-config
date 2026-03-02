@@ -30,6 +30,7 @@
       libreoffice
       links2
       mpv
+      nmap
       nyancat
       obsidian
       opentofu
