@@ -20,6 +20,7 @@
       flac
       ghostscript # compress PDFs with: `gs -sDEVICE=pdfwrite -dPDFSETTINGS=/ebook -dNOPAUSE -dBATCH -sOutputFile=output.pdf input.pdf`
       gimp
+      gitsign # Chainguard's git signing program: https://docs.sigstore.dev/cosign/signing/gitsign/
       gnupg
       hadolint
       hyfetch

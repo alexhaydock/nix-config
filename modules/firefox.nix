@@ -13,7 +13,7 @@
   };
   home-manager.users.user = {pkgs, ...}: {
     # Link firefox-gnome-theme into Firefox profile dir
-    home.file.".mozilla/firefox/9kg8ag9n.default-release/chrome/firefox-gnome-theme".source = "${pkgs.firefox-gnome-theme}/share/firefox-gnome-theme";
+    home.file.".mozilla/firefox/nixfox.default-release/chrome/firefox-gnome-theme".source = "${pkgs.firefox-gnome-theme}/share/firefox-gnome-theme";
 
     # Configure Firefox
     programs.firefox = {
@@ -33,18 +33,13 @@
         GenerativeAI = {
           Enabled = false;
         };
-        SearchEngines = {
-          Remove = [
-            "Perplexity"
-          ];
-        };
       };
 
       # Configure profile
       profiles.default = {
         id = 0;
         name = "default-release";
-        path = "9kg8ag9n.default-release";
+        path = "nixfox.default-release";
         isDefault = true;
         userChrome = ''
           @import "firefox-gnome-theme/userChrome.css";
@@ -53,7 +48,23 @@
           @import "firefox-gnome-theme/userContent.css";
         '';
         settings = {
+          "browser.contentblocking.category" = "strict";
+          "browser.newtabpage.enabled" = false;
+          "browser.search.suggest.enabled" = false;
           "browser.startup.homepage" = "about:blank";
+          "browser.urlbar.suggest.quicksuggest.all" = false; # Disables "Get suggestions from the web related to your search"
+          "browser.urlbar.suggest.quicksuggest.sponsored" = false;
+          "browser.urlbar.suggest.searches" = false;
+          "dom.security.https_only_mode" = true;
+          "extensions.formautofill.addresses.enabled" = false;
+          "extensions.formautofill.creditCards.enabled" = false;
+          "network.trr.mode" = 3; # Strict DoH - no fallback
+          "network.trr.uri" = "https://dns.infected.systems/dns-query";
+          "privacy.bounceTrackingProtection.mode" = 1;
+          "privacy.trackingprotection.emailtracking.enabled" = true;
+          "privacy.trackingprotection.enabled" = true;
+          "privacy.trackingprotection.socialtracking.enabled" = true;
+          "signon.rememberSignons" = false; # "Ask to save passwords"
           # Settings below copied from firefox-gnome-theme's example `user.js`
           # https://github.com/rafaelmardojai/firefox-gnome-theme/blob/f7ffd917ac0d253dbd6a3bf3da06888f57c69f92/configuration/user.js
           "toolkit.legacyUserProfileCustomizations.stylesheets" = true;
@@ -61,6 +72,10 @@
           "svg.context-properties.content.enabled" = true;
           "browser.theme.dark-private-windows" = false;
           "widget.gtk.rounded-bottom-corners.enabled" = true;
+        };
+        search = {
+          force = true;
+          default = "ddg";
         };
       };
     };

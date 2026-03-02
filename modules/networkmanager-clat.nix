@@ -9,7 +9,7 @@
 # nixpkgs release doesn't seem to have the CLAT working)
 let
   unstable = import nixpkgs-unstable {
-    system = pkgs.system;
+    system = pkgs.stdenv.hostPlatform.system;
   };
 in {
   # Horrible hack to create a dispatcher to enable CLAT every time a connection
