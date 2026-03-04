@@ -1,6 +1,8 @@
 {pkgs, ...}: {
   users.users.user = {
     packages = with pkgs; [
+      age
+      age-plugin-yubikey
       ansible
       ansible-lint
       bat # Like cat, but cooler
@@ -42,6 +44,7 @@
       rpmextract
       signal-desktop
       socat
+      sops # Secrets management: https://getsops.io/
       sshfs
       usbutils # lsusb
       vhs # For creating shell recordings for documentation
