@@ -16,12 +16,12 @@
     ../../modules/beets.nix
     ../../modules/bluetooth-default-disable.nix
     ../../modules/cup-of-tea.nix
-    ../../modules/firefox.nix
     ../../modules/fwupd.nix
     ../../modules/generic.nix
     ../../modules/git.nix
     ../../modules/gnome.nix
     ../../modules/home-manager.nix
+    ../../modules/librewolf.nix
     ../../modules/networkmanager-clat.nix
     ../../modules/ntp-janet.nix
     ../../modules/nushell.nix
@@ -32,6 +32,7 @@
     ../../modules/serial-devices.nix
     ../../modules/ssh-server.nix
     ../../modules/sshfs-media.nix
+    ../../modules/tor-browser.nix
     ../../modules/tor.nix
     ../../modules/unfree-allow.nix
     ../../modules/vscodium.nix
