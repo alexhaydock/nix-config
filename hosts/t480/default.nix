@@ -37,6 +37,7 @@
     ../../modules/unfree-allow.nix
     ../../modules/vscodium.nix
     ../../modules/wireshark.nix
+    ../../modules/yubikey.nix
   ];
 
   # This value determines the NixOS release from which the default
