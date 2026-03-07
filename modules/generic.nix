@@ -32,9 +32,6 @@
   services.xserver.enable = true;
   services.xserver.excludePackages = [pkgs.xterm]; # we don't want the graphical xterm package as we have Ptyxis
 
-  # Disable CUPS
-  services.printing.enable = false;
-
   # Enable touchpad support (enabled default in most desktopManager).
   # services.xserver.libinput.enable = true;
 

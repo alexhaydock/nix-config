@@ -16,6 +16,7 @@
     ../../modules/beets.nix
     ../../modules/bluetooth-default-disable.nix
     ../../modules/cup-of-tea.nix
+    ../../modules/cups-disable.nix
     ../../modules/fwupd.nix
     ../../modules/generic.nix
     ../../modules/git.nix
