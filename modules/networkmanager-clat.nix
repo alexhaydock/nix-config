@@ -52,8 +52,8 @@ in {
       domain = "gitlab.freedesktop.org";
       owner = "NetworkManager";
       repo = "NetworkManager";
-      rev = "128b49fe2122d297e7c51e73834a269b6730399a";
-      hash = "sha256-GfepLaNLg/V1w4zpV1sMyGKweNjL2lGzoIoqSOS53JM=";
+      rev = "0e2b679afb0a563a915d6286a4ab1ac8f44479ed";
+      hash = "sha256-YpGkrxS/ydL2LMtCgpDLMZnxxmP1ZmsKp4kQwv55m3w=";
     };
 
     # Patched version of the nixpkgs upstream fix-paths.patch for the udev rules
