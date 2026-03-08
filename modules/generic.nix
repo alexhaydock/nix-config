@@ -22,9 +22,6 @@
   boot.loader.systemd-boot.enable = true;
   boot.loader.efi.canTouchEfiVariables = true;
 
-  # Use the stable kernel branch rather than the LTS branch
-  boot.kernelPackages = pkgs.linuxPackages_latest;
-
   # Use nftables instead of iptables as the firewall
   networking.nftables.enable = true;
 
