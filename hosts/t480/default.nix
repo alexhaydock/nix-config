@@ -20,6 +20,7 @@
     ../../modules/fwupd.nix
     ../../modules/generic.nix
     ../../modules/git.nix
+    ../../modules/gnome-settings-physical.nix
     ../../modules/gnome.nix
     ../../modules/home-manager.nix
     ../../modules/kernel-stable.nix

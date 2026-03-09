@@ -15,6 +15,7 @@
     ../../modules/cup-of-tea.nix
     ../../modules/cups-disable.nix
     ../../modules/generic.nix
+    ../../modules/gnome-settings-vm.nix
     ../../modules/gnome.nix
     ../../modules/home-manager.nix
     ../../modules/kernel-stable.nix
