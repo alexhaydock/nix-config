@@ -29,6 +29,7 @@
     ../../modules/nushell.nix
     ../../modules/pipewire.nix
     ../../modules/pkgs-dev-workstation.nix
+    ../../modules/pkgs-media-tools.nix
     ../../modules/podman.nix
     ../../modules/qemu.nix
     ../../modules/serial-devices.nix

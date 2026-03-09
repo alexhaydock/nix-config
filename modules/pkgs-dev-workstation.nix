@@ -17,9 +17,7 @@
       easytag # GUI based audio file tagger
       element-desktop
       feishin # Navidrome client
-      ffmpeg
       file # provides `file`
-      flac
       ghostscript # compress PDFs with: `gs -sDEVICE=pdfwrite -dPDFSETTINGS=/ebook -dNOPAUSE -dBATCH -sOutputFile=output.pdf input.pdf`
       gimp
       gitsign # Chainguard's git signing program: https://docs.sigstore.dev/cosign/signing/gitsign/
@@ -33,7 +31,6 @@
       keepassxc
       libreoffice
       links2
-      mpv
       nmap
       nyancat
       obsidian
@@ -51,7 +48,6 @@
       vhs # For creating shell recordings for documentation
       wget
       yamllint
-      yt-dlp
     ];
   };
 }
