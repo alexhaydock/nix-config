@@ -47,7 +47,6 @@
       signal-desktop
       socat
       sops # Secrets management: https://getsops.io/
-      sshfs
       usbutils # lsusb
       vhs # For creating shell recordings for documentation
       wget

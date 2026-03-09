@@ -22,6 +22,7 @@
     ../../modules/ntp-janet.nix
     ../../modules/pipewire.nix
     ../../modules/sshfs-vm-share.nix
+    ../../modules/sshfs.nix
     ../../modules/tor-browser.nix
     ../../modules/unfree-allow.nix
   ];
