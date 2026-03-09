@@ -24,7 +24,7 @@
     ../../modules/gnome.nix
     ../../modules/home-manager.nix
     ../../modules/kernel-stable.nix
-    ../../modules/librewolf-localdoh.nix
+    ../../modules/librewolf.nix
     ../../modules/networkmanager-clat.nix
     ../../modules/ntp-janet.nix
     ../../modules/nushell.nix
@@ -44,6 +44,9 @@
     ../../modules/wireshark.nix
     ../../modules/yubikey.nix
   ];
+
+  # Custom config for my modules below this line
+  my.librewolf.trrUri = "https://dns.infected.systems/dns-query"; # Use DoH resolver on local LAN
 
   # This value determines the NixOS release from which the default
   # settings for stateful data, like file locations and database versions

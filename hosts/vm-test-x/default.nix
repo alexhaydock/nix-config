@@ -19,7 +19,7 @@
     ../../modules/gnome.nix
     ../../modules/home-manager.nix
     ../../modules/kernel-stable.nix
-    ../../modules/librewolf-mullvaddoh.nix
+    ../../modules/librewolf.nix
     ../../modules/ntp-janet.nix
     ../../modules/pipewire.nix
     ../../modules/pkgs-media-tools.nix
