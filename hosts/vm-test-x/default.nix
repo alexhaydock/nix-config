@@ -21,7 +21,7 @@
     ../../modules/librewolf-mullvaddoh.nix
     ../../modules/ntp-janet.nix
     ../../modules/pipewire.nix
-    ../../modules/podman.nix
+    ../../modules/sshfs-vm-share.nix
     ../../modules/tor-browser.nix
     ../../modules/unfree-allow.nix
   ];
