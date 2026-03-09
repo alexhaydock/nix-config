@@ -23,7 +23,7 @@
     ../../modules/gnome.nix
     ../../modules/home-manager.nix
     ../../modules/kernel-stable.nix
-    ../../modules/librewolf.nix
+    ../../modules/librewolf-localdoh.nix
     ../../modules/networkmanager-clat.nix
     ../../modules/ntp-janet.nix
     ../../modules/nushell.nix

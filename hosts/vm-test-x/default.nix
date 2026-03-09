@@ -18,7 +18,7 @@
     ../../modules/gnome.nix
     ../../modules/home-manager.nix
     ../../modules/kernel-stable.nix
-    ../../modules/librewolf.nix
+    ../../modules/librewolf-mullvaddoh.nix
     ../../modules/ntp-janet.nix
     ../../modules/pipewire.nix
     ../../modules/podman.nix
