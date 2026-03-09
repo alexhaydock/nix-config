@@ -25,6 +25,7 @@
     ../../modules/pkgs-media-tools.nix
     ../../modules/sshfs-vm-share.nix
     ../../modules/sshfs.nix
+    ../../modules/symlink-downloads.nix
     ../../modules/tor-browser.nix
     ../../modules/unfree-allow.nix
   ];
