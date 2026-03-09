@@ -20,6 +20,12 @@
       modules = [./hosts/t480/default.nix];
     };
 
+    nixosConfigurations.x = nixpkgs.lib.nixosSystem {
+      system = "x86_64-linux";
+      specialArgs = attrs;
+      modules = [./hosts/vm-test-x/default.nix];
+    };
+
     formatter.x86_64-linux =
       nixpkgs.legacyPackages.x86_64-linux.alejandra;
   };
