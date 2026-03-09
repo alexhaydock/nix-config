@@ -3,5 +3,11 @@
   home-manager,
   ...
 }: {
-  home.file."Downloads".source = config.lib.file.mkOutOfStoreSymlink "/home/user/zpools/data/x/Downloads";
+  home-mmanager.users.user = {
+    home.file = {
+      "Downloads" = {
+        source = config.lib.file.mkOutOfStoreSymlink "/home/user/zpools/data/x/Downloads";
+      };
+    };
+  };
 }
