@@ -12,6 +12,7 @@
     ./hardware-configuration.nix
     (import "${home-manager}/nixos")
 
+    ../../modules/auditd.nix
     ../../modules/avahi.nix
     ../../modules/beets.nix
     ../../modules/bluetooth-default-disable.nix
@@ -34,6 +35,7 @@
     ../../modules/podman.nix
     ../../modules/qemu.nix
     ../../modules/serial-devices.nix
+    ../../modules/splunk-log-forwarding.nix
     ../../modules/ssh-server.nix
     ../../modules/sshfs-media.nix
     ../../modules/sshfs.nix
