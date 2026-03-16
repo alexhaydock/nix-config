@@ -24,7 +24,8 @@
           url("https://splunk.infected.systems:8088")
           token("deadbeef-dead-beef-dead-beefdeadbeef")
           index("linux")
-          event("$(format_json --scope rfc5424 --key journald.*)\n")
+          sourcetype("journald")
+          event("$(format_json --key journald.* --rekey journald.* --shift 9)\n")
         );
       };
 
