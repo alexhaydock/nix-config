@@ -46,6 +46,7 @@
       sops # Secrets management: https://getsops.io/
       usbutils # lsusb
       vhs # For creating shell recordings for documentation
+      waypipe # Wayland session forwarding
       wget
       yamllint
     ];

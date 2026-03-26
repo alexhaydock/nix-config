@@ -39,7 +39,6 @@
     extraGroups = [
       "networkmanager"
       "wheel"
-      "dialout" # to talk to serial devices
     ];
   };
 }
