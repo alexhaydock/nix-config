@@ -30,8 +30,10 @@
     ../../modules/ntp-janet.nix
     ../../modules/nushell.nix
     ../../modules/pipewire.nix
-    ../../modules/pkgs-dev-workstation.nix
-    ../../modules/pkgs-media-tools.nix
+    ../../modules/pkgs-desktop.nix
+    ../../modules/pkgs-tools-dev.nix
+    ../../modules/pkgs-tools-general.nix
+    ../../modules/pkgs-tools-media.nix
     ../../modules/podman.nix
     ../../modules/qemu.nix
     ../../modules/serial-devices.nix
