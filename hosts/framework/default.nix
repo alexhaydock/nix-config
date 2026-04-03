@@ -37,7 +37,7 @@
     ../../modules/podman.nix
     ../../modules/qemu.nix
     ../../modules/serial-devices.nix
-    ../../modules/splunk-log-forwarding.nix
+    # ../../modules/splunk-log-forwarding.nix # Temp disabled to save license
     ../../modules/ssh-server.nix
     ../../modules/sshfs-media.nix
     ../../modules/sshfs.nix
