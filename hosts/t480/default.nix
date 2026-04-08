@@ -26,6 +26,7 @@
     ../../modules/kernel-stable.nix
     ../../modules/librewolf.nix
     ../../modules/networkmanager-clat.nix
+    ../../modules/nix-optimise.nix
     ../../modules/ntp-janet.nix
     ../../modules/nushell.nix
     ../../modules/pipewire.nix

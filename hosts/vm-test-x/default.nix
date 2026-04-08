@@ -20,6 +20,7 @@
     ../../modules/home-manager.nix
     ../../modules/kernel-stable.nix
     ../../modules/librewolf.nix
+    ../../modules/nix-optimise.nix
     ../../modules/ntp-janet.nix
     ../../modules/pipewire.nix
     ../../modules/pkgs-tools-general.nix
