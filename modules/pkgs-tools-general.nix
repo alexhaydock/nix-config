@@ -5,6 +5,7 @@
       dig
       file # provides `file`
       hyfetch
+      nvd # Nix version diff tool: `nvd diff /run/booted-system /run/current-system`
       nyancat
       optipng
       pciutils # lspci
