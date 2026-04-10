@@ -44,6 +44,7 @@
     ../../modules/ssh-server.nix
     ../../modules/sshfs-media.nix
     ../../modules/sshfs.nix
+    ../../modules/swapfile.nix
     ../../modules/tor-browser.nix
     ../../modules/tor.nix
     ../../modules/unfree-allow.nix
@@ -54,9 +55,6 @@
 
   # Custom config for my modules below this line
   my.librewolf.trrUri = "https://dns.infected.systems/dns-query"; # Use DoH resolver on local LAN
-
-  # Enable ROCm support since we have an AMD GPU
-  nixpkgs.config.rocmSupport = true;
 
   # This value determines the NixOS release from which the default
   # settings for stateful data, like file locations and database versions

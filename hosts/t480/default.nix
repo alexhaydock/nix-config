@@ -40,6 +40,7 @@
     ../../modules/ssh-server.nix
     ../../modules/sshfs-media.nix
     ../../modules/sshfs.nix
+    ../../modules/swapfile.nix
     ../../modules/tor-browser.nix
     ../../modules/tor.nix
     ../../modules/unfree-allow.nix
