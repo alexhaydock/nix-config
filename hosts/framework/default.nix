@@ -55,6 +55,9 @@
   # Custom config for my modules below this line
   my.librewolf.trrUri = "https://dns.infected.systems/dns-query"; # Use DoH resolver on local LAN
 
+  # Enable ROCm support since we have an AMD GPU
+  nixpkgs.config.rocmSupport = true;
+
   # This value determines the NixOS release from which the default
   # settings for stateful data, like file locations and database versions
   # on your system were taken. It‘s perfectly fine and recommended to leave
