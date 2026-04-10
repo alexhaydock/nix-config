@@ -24,7 +24,7 @@
     ../../modules/ntp-janet.nix
     ../../modules/pipewire.nix
     ../../modules/pkgs-tools-general.nix
-    ../../modules/pkgs-tools-llm-webui.nix # Don't really trust this outside of a VM
+    ../../modules/pkgs-tools-llm-webui.nix
     ../../modules/pkgs-tools-media.nix
     ../../modules/sshfs-vm-share.nix
     ../../modules/sshfs.nix

@@ -35,7 +35,8 @@
     ../../modules/pkgs-tools-dev.nix
     ../../modules/pkgs-tools-gamedev.nix # Framework only
     ../../modules/pkgs-tools-general.nix
-    ../../modules/pkgs-tools-llm.nix # Framework only
+    ../../modules/pkgs-tools-llm-server.nix # Framework only
+    ../../modules/pkgs-tools-llm-webui.nix
     ../../modules/pkgs-tools-media.nix
     ../../modules/podman.nix
     ../../modules/qemu.nix
