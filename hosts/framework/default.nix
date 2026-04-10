@@ -12,7 +12,7 @@
     ./hardware-configuration.nix
     (import "${home-manager}/nixos")
 
-    ../../modules/auditd.nix
+    ../../modules/auditd.nix # Framework only
     ../../modules/avahi.nix
     ../../modules/beets.nix
     ../../modules/bluetooth-default-disable.nix
@@ -33,13 +33,14 @@
     ../../modules/pipewire.nix
     ../../modules/pkgs-desktop.nix
     ../../modules/pkgs-tools-dev.nix
+    ../../modules/pkgs-tools-gamedev.nix # Framework only
     ../../modules/pkgs-tools-general.nix
-    ../../modules/pkgs-tools-llm.nix
+    ../../modules/pkgs-tools-llm.nix # Framework only
     ../../modules/pkgs-tools-media.nix
     ../../modules/podman.nix
     ../../modules/qemu.nix
     ../../modules/serial-devices.nix
-    ../../modules/splunk-log-forwarding.nix # Temp disabled to save license
+    ../../modules/splunk-log-forwarding.nix # Framework only
     ../../modules/ssh-server.nix
     ../../modules/sshfs-media.nix
     ../../modules/sshfs.nix
