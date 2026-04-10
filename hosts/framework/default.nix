@@ -34,11 +34,12 @@
     ../../modules/pkgs-desktop.nix
     ../../modules/pkgs-tools-dev.nix
     ../../modules/pkgs-tools-general.nix
+    ../../modules/pkgs-tools-llm.nix
     ../../modules/pkgs-tools-media.nix
     ../../modules/podman.nix
     ../../modules/qemu.nix
     ../../modules/serial-devices.nix
-    # ../../modules/splunk-log-forwarding.nix # Temp disabled to save license
+    ../../modules/splunk-log-forwarding.nix # Temp disabled to save license
     ../../modules/ssh-server.nix
     ../../modules/sshfs-media.nix
     ../../modules/sshfs.nix
