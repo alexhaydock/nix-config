@@ -18,7 +18,9 @@ in {
     #
     # ollama-vulkan does work but seems unstable.
     package = unstable.ollama-vulkan;
-    # Listen on all interfaces rather than 127.0.0.1
-    host = "[::]";
+    host = "[::]"; # Listen on all interfaces rather than 127.0.0.1
+    environmentVariables = {
+      OLLAMA_KEEP_ALIVE = "60m"; # Keep models loaded for 60m rather than aggressively unloading
+    };
   };
 }
