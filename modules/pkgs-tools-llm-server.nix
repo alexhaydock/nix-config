@@ -20,7 +20,7 @@ in {
     package = unstable.ollama-vulkan;
     host = "[::]"; # Listen on all interfaces rather than 127.0.0.1
     environmentVariables = {
-      OLLAMA_KEEP_ALIVE = "60m"; # Keep models loaded for 60m rather than aggressively unloading
+      OLLAMA_KEEP_ALIVE = "-1"; # Keep models loaded indefinitely to prevent SSD grinding
     };
   };
 }

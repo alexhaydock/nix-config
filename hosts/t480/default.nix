@@ -12,6 +12,7 @@
     ./hardware-configuration.nix
     (import "${home-manager}/nixos")
 
+    # Import common modules
     ../../modules/avahi.nix
     ../../modules/beets.nix
     ../../modules/bluetooth-default-disable.nix
@@ -51,6 +52,9 @@
     ../../modules/vscodium.nix
     ../../modules/wireshark.nix
     ../../modules/yubikey.nix
+
+    # Import system-specific modules
+    ../../modules/gpu-intel.nix
   ];
 
   # Custom config for my modules below this line

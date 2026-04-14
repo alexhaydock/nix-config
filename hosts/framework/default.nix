@@ -12,7 +12,7 @@
     ./hardware-configuration.nix
     (import "${home-manager}/nixos")
 
-    ../../modules/auditd.nix # Framework only
+    # Import common modules
     ../../modules/avahi.nix
     ../../modules/beets.nix
     ../../modules/bluetooth-default-disable.nix
@@ -36,15 +36,11 @@
     ../../modules/pipewire.nix
     ../../modules/pkgs-desktop.nix
     ../../modules/pkgs-tools-dev.nix
-    ../../modules/pkgs-tools-gamedev.nix # Framework only
     ../../modules/pkgs-tools-general.nix
-    ../../modules/pkgs-tools-llm-server.nix # Framework only
-    ../../modules/pkgs-tools-llm-webui.nix
     ../../modules/pkgs-tools-media.nix
     ../../modules/podman.nix
     ../../modules/qemu.nix
     ../../modules/serial-devices.nix
-    ../../modules/splunk-log-forwarding.nix # Framework only
     ../../modules/ssh-server.nix
     ../../modules/sshfs-media.nix
     ../../modules/sshfs.nix
@@ -56,6 +52,14 @@
     ../../modules/vscodium.nix
     ../../modules/wireshark.nix
     ../../modules/yubikey.nix
+
+    # Import system-specific modules
+    ../../modules/auditd.nix
+    ../../modules/gpu-amd.nix
+    ../../modules/pkgs-tools-gamedev.nix
+    ../../modules/pkgs-tools-llm-server.nix
+    ../../modules/pkgs-tools-llm-webui.nix
+    ../../modules/splunk-log-forwarding.nix
   ];
 
   # Custom config for my modules below this line
