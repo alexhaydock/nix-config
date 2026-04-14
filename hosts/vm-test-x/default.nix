@@ -12,14 +12,17 @@
     ./hardware-configuration.nix
     (import "${home-manager}/nixos")
 
+    ../../modules/bootloader.nix
     ../../modules/cup-of-tea.nix
     ../../modules/cups-disable.nix
-    ../../modules/generic.nix
+    ../../modules/flatpak.nix
     ../../modules/gnome-settings-vm.nix
     ../../modules/gnome.nix
     ../../modules/home-manager.nix
     ../../modules/kernel-stable.nix
     ../../modules/librewolf.nix
+    ../../modules/nftables.nix
+    ../../modules/nix-features.nix
     ../../modules/nix-optimise.nix
     ../../modules/ntp-janet.nix
     ../../modules/pipewire.nix
@@ -31,6 +34,7 @@
     ../../modules/symlink-downloads.nix
     ../../modules/tor-browser.nix
     ../../modules/unfree-allow.nix
+    ../../modules/users-user.nix
   ];
 
   # This value determines the NixOS release from which the default
