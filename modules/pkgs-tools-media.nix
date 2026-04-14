@@ -4,7 +4,9 @@
       ffmpeg-headless
       ffmpegthumbnailer
       flac
+      mediainfo
       mpv
+      sox # Spectrogram generation
       yt-dlp
     ];
   };

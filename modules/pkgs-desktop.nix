@@ -12,6 +12,7 @@
       obsidian
       rpi-imager
       signal-desktop
+      transmission_4-gtk
     ];
   };
 }
