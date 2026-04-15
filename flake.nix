@@ -8,6 +8,12 @@
     nixpkgs,
     ...
   } @ attrs: {
+    nixosConfigurations.desktop = nixpkgs.lib.nixosSystem {
+      system = "x86_64-linux";
+      specialArgs = attrs;
+      modules = [./hosts/desktop/default.nix];
+    };
+
     nixosConfigurations.framework = nixpkgs.lib.nixosSystem {
       system = "x86_64-linux";
       specialArgs = attrs;

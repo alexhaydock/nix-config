@@ -12,12 +12,8 @@ in {
     # Pull in Ollama from Nixpkgs Unstable since it seems like we need a
     # newer version to pull in some of the newer models
     #
-    # ollama-rocm doesn't work on the Framework's
-    # Radeon 840M even with ROCm support enabled at a system level with
-    # NixOS.
-    #
-    # ollama-vulkan does work but seems unstable.
-    package = unstable.ollama-vulkan;
+    # Use ROCm to get the most out of AMD GPU
+    package = unstable.ollama-rocm;
     host = "[::]"; # Listen on all interfaces rather than 127.0.0.1
     environmentVariables = {
       OLLAMA_KEEP_ALIVE = "-1"; # Keep models loaded indefinitely to prevent SSD grinding

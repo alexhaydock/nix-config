@@ -6,7 +6,7 @@
   home-manager,
   ...
 }: {
-  networking.hostName = "framework";
+  networking.hostName = "desktop";
 
   imports = [
     ./hardware-configuration.nix
@@ -56,7 +56,11 @@
     # Import system-specific modules
     #../../modules/auditd.nix # Disabled until ruleset is tuned (performance considerations)
     ../../modules/gpu-amd.nix
+    ../../modules/gpu-amd-rocm.nix
+    ../../modules/pkgs-gaming.nix
     ../../modules/pkgs-tools-gamedev.nix
+    ../../modules/pkgs-tools-llm-server.nix
+    ../../modules/pkgs-tools-llm-webui.nix
     ../../modules/splunk-log-forwarding.nix
   ];
 
