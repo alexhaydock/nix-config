@@ -54,7 +54,7 @@
     ../../modules/yubikey.nix
 
     # Import system-specific modules
-    ../../modules/auditd.nix
+    #../../modules/auditd.nix # Disabled until ruleset is tuned (performance considerations)
     ../../modules/gpu-amd.nix
     ../../modules/pkgs-tools-gamedev.nix
     ../../modules/pkgs-tools-llm-server.nix
