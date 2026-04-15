@@ -12,11 +12,12 @@ in {
     # Pull in Ollama from Nixpkgs Unstable since it seems like we need a
     # newer version to pull in some of the newer models
     #
-    # Use ROCm to get the most out of AMD GPU
+    # Use the ROCm version for better performance on 9070 XT
     package = unstable.ollama-rocm;
     host = "[::]"; # Listen on all interfaces rather than 127.0.0.1
     environmentVariables = {
       OLLAMA_KEEP_ALIVE = "-1"; # Keep models loaded indefinitely to prevent SSD grinding
+      ROCR_VISIBLE_DEVICES = "GPU-58d041af24d7c0b6"; # Limit only to 9070 XT based on uuid from `rocminfo`
     };
   };
 }
