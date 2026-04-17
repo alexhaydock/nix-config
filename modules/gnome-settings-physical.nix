@@ -69,8 +69,8 @@
         ambient-enabled = false;
         # Enable automatic sleep when on AC power
         sleep-inactive-ac-type = "suspend";
-        # Sleep after 2h when on AC power
-        sleep-inactive-ac-timeout = 7200;
+        # Sleep after 1h when on AC power
+        sleep-inactive-ac-timeout = 3600;
       };
       "org/gnome/system/location" = {
         enabled = false;
