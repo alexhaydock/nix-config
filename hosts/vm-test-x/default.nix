@@ -29,7 +29,7 @@
     ../../modules/pkgs-tools-general.nix
     ../../modules/pkgs-tools-llm-webui.nix
     ../../modules/pkgs-tools-media.nix
-    ../../modules/sshfs-vm-share.nix
+    ../../modules/sshfs-shares.nix
     ../../modules/sshfs.nix
     ../../modules/symlink-downloads.nix
     ../../modules/tor-browser.nix

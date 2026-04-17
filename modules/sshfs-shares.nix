@@ -6,7 +6,7 @@
     systemd.user.mounts = {
       home-user-zpools = {
         Unit = {
-          Description = "Mount VM Shares via SSHFS";
+          Description = "Mount Shares via SSHFS";
           Wants = "network-online.target";
           After = "network-online.target";
         };
