@@ -25,7 +25,7 @@
     ../../modules/gnome-settings-physical.nix
     ../../modules/gnome.nix
     ../../modules/home-manager.nix
-    ../../modules/kernel-stable.nix
+    ../../modules/kernel-pin-specific.nix # Pin 6.19 until 7.0 is fixed: https://github.com/NixOS/nixpkgs/issues/511100
     ../../modules/librewolf.nix
     ../../modules/networkmanager-clat.nix
     ../../modules/nftables.nix
