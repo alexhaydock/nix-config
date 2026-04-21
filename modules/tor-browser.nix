@@ -1,7 +1,5 @@
 {pkgs, ...}: {
-  users.users.user = {
-    packages = with pkgs; [
-      tor-browser
-    ];
-  };
+  users.users.user.packages = with pkgs; [
+    tor-browser
+  ];
 }

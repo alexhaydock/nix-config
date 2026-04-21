@@ -22,10 +22,8 @@
   };
 
   # Install GNOME Extensions as user packages
-  users.users.user = {
-    packages = with pkgs; [
-      gnomeExtensions.caffeine
-      ptyxis # and a fancy Terminal
-    ];
-  };
+  users.users.user.packages = with pkgs; [
+    gnomeExtensions.caffeine
+    ptyxis # and a fancy Terminal
+  ];
 }

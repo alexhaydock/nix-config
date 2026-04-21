@@ -1,9 +1,8 @@
 {pkgs, ...}: {
-  users.users.user = {
-    packages = with pkgs; [
-      oniux # Modern version of `torsocks`
-    ];
-  };
+  users.users.user.packages = with pkgs; [
+    oniux # Modern version of `torsocks`
+  ];
+
   services.tor = {
     enable = true;
     client = {

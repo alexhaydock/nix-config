@@ -1,7 +1,5 @@
 {pkgs, ...}: {
-  users.users.user = {
-    packages = with pkgs; [
-      godot
-    ];
-  };
+  users.users.user.packages = with pkgs; [
+    godot
+  ];
 }
