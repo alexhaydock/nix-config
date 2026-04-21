@@ -3,6 +3,7 @@
     packages = with pkgs; [
       curl
       dig
+      dmidecode
       file # provides `file`
       hyfetch
       nvd # Nix version diff tool: `nvd diff /run/booted-system /run/current-system`
