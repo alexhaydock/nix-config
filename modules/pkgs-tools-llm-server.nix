@@ -19,5 +19,7 @@ in {
       OLLAMA_KEEP_ALIVE = "-1"; # Keep models loaded indefinitely to prevent SSD grinding
       ROCR_VISIBLE_DEVICES = "GPU-58d041af24d7c0b6"; # Limit only to 9070 XT based on uuid from `rocminfo`
     };
+    # Declaratively load a model list
+    loadModels = ["gemma4:31b"];
   };
 }
