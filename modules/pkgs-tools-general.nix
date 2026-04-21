@@ -12,6 +12,7 @@
       pciutils # lspci
       psmisc # provides fuser, killall, pstree, etc
       socat
+      tcpdump
       usbutils # lsusb
       wget
     ];

@@ -44,7 +44,6 @@
     ../../modules/ssh-server.nix
     ../../modules/swapfile.nix
     ../../modules/tor-browser.nix
-    ../../modules/tor.nix
     ../../modules/unfree-allow.nix
     ../../modules/users-user.nix
     ../../modules/vscodium.nix
