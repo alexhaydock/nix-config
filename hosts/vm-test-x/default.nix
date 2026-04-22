@@ -35,6 +35,7 @@
     ../../modules/tor-browser.nix
     ../../modules/unfree-allow.nix
     ../../modules/users-user.nix
+    ../../modules/wireguard.nix
   ];
 
   # This value determines the NixOS release from which the default

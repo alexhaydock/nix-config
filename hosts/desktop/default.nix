@@ -49,6 +49,7 @@
     ../../modules/unfree-allow.nix
     ../../modules/users-user.nix
     ../../modules/vscodium.nix
+    ../../modules/wireguard.nix
     ../../modules/wireshark.nix
     ../../modules/yubikey.nix
 
