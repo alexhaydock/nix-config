@@ -19,7 +19,6 @@
     ../../modules/gnome-settings-vm.nix
     ../../modules/gnome.nix
     ../../modules/home-manager.nix
-    ../../modules/kernel-stable.nix
     ../../modules/librewolf.nix
     ../../modules/nftables.nix
     ../../modules/nix-features.nix
