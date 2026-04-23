@@ -29,7 +29,7 @@ in {
     loadModels = ["gemma4:31b"];
   };
 
-  # Lower the priority of the Ollama service to avoid
+  # Lower the priority of the service to avoid
   # harming system responsiveness
   systemd.services.ollama = {
     serviceConfig = {
