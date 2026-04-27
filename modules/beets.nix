@@ -5,8 +5,8 @@
       settings = {
         directory = "/home/user/zpools/data/media/music/navidrome/beets-managed";
         import = {
+          copy = true; # Copy files rather than moving them
           write = true;
-          move = true;
         };
       };
     };
