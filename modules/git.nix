@@ -60,6 +60,16 @@
         help = {
           autocorrect = "prompt";
         };
+        # Use GitHub via SSH
+        url = {
+          "git@github.com:" = {
+            insteadOf = [
+              "https://github.com/"
+              "gh:"
+              "github:"
+            ];
+          };
+        };
       };
     };
   };
