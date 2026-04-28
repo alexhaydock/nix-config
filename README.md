@@ -7,38 +7,28 @@
 * Create admin user called `user` during installation
 * Encrypt boot disk as required
 
-### Copy SSH keys
-Copy my SSH keys from backup into `~/.ssh`
+### Copy and commit hardware config into repo
+Copy the `/etc/nixos/hardware-configuration.nix` that the installer has automatically generated into an entry for the system inside `hosts/` in this repo.
 
-### Enable Git temporarily
+### Move the local NixOS config
 ```sh
-nix-shell -p git
+sudo mv -fv /etc/nixos ~/nixos-conf-old
 ```
 
-### Clone repo
+### Run a rebuild based on the remote flake
+> [!WARNING]
+> Ensure you use the right hostname during this step and the hostname has support wired up in both `flake.nix` and in the `hosts/` directory in this repo.
+
 ```sh
-git clone git@github.com:alexhaydock/nix-config.git ~/nix-config
+sudo nixos-rebuild boot --flake github:alexhaydock/nix-config#desktop
 ```
 
-### Copy hardware-configuration.nix into repo
-Copies the `hardware-configuration.nix` generated automatically by the installer into the repo ready for use:
-```sh
-cp -fv /etc/nixos/hardware-configuration.nix ~/nix-config/hosts/framework/hardware-configuration.nix
-```
-
-### Copy repo over system level Nix config
-```sh
-sudo rsync -avsh --delete ~/nix-config/ /etc/nixos/
-```
-
-### Update NixOS config using specific target hostname
-Using `nixos-rebuild boot` means we can build the config and set it as the boot default without switching into it immediately:
-```sh
-sudo nixos-rebuild boot --flake /etc/nixos#framework
-```
-
-### Reboot
+### Reboot into the working system
 ```sh
 sudo systemctl reboot
 ```
 
+### Future upgrades:
+```sh
+sudo nixos-rebuild switch --flake github:alexhaydock/nix-config ; nvd diff /run/booted-system /run/current-system
+```

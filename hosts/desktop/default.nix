@@ -29,6 +29,7 @@
     ../../modules/librewolf.nix
     ../../modules/networkmanager-clat.nix
     ../../modules/nftables.nix
+    ../../modules/nix-autoupdate.nix
     ../../modules/nix-features.nix
     ../../modules/nix-optimise.nix
     ../../modules/ntp-janet.nix
