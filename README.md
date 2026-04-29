@@ -34,5 +34,5 @@ After the initial reboot, the hostname no longer needs to be specified when rebu
 Now we can rebuild and switch into our system and use `nvd diff` to see the difference between the original system we booted and the new derivation (useful to work out if we have upgraded certain packages that might require a reboot):
 
 ```sh
-nixos-rebuild switch --ask-sudo-password --flake github:alexhaydock/nix-config ; nvd diff /run/booted-system /run/current-system
+nixos-rebuild switch --refresh --ask-sudo-password --flake github:alexhaydock/nix-config ; nvd diff /run/booted-system /run/current-system
 ```
