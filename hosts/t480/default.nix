@@ -1,4 +1,4 @@
-{...}: {
+{home-manager, ...}: {
   networking.hostName = "t480";
 
   imports = [
