@@ -1,16 +1,9 @@
-{
-  config,
-  pkgs,
-  nixpkgs,
-  nixpkgs-unstable,
-  home-manager,
-  ...
-}: {
+{...}: {
   networking.hostName = "framework";
 
   imports = [
     ./hardware-configuration.nix
-    (import "${home-manager}/nixos")
+    home-manager.nixosModules.home-manager
 
     # Import common modules
     ../../modules/avahi.nix

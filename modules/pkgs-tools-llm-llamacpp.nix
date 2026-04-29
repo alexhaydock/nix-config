@@ -3,18 +3,14 @@
 {
   pkgs,
   lib,
-  nixpkgs-unstable,
+  pkgsUnstable,
   ...
-}: let
-  unstable = import nixpkgs-unstable {
-    system = pkgs.stdenv.hostPlatform.system;
-  };
-in {
+}: {
   services.llama-swap = {
     enable = true;
     port = 11111;
     settings = let
-      llama-cpp = unstable.llama-cpp.override {
+      llama-cpp = pkgsUnstable.llama-cpp.override {
         rocmSupport = true;
       };
       llama-server = lib.getExe' llama-cpp "llama-server";

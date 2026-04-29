@@ -1,16 +1,9 @@
-{
-  config,
-  pkgs,
-  nixpkgs,
-  nixpkgs-unstable,
-  home-manager,
-  ...
-}: {
+{...}: {
   networking.hostName = "x";
 
   imports = [
     ./hardware-configuration.nix
-    (import "${home-manager}/nixos")
+    home-manager.nixosModules.home-manager
 
     ../../modules/bootloader.nix
     ../../modules/cup-of-tea.nix

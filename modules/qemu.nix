@@ -1,15 +1,11 @@
 {
   pkgs,
-  nixpkgs-unstable,
+  pkgsUnstable,
   ...
-}: let
-  unstable = import nixpkgs-unstable {
-    system = pkgs.stdenv.hostPlatform.system;
-  };
-in {
+}: {
   users.users.user.packages = with pkgs; [
     passt
-    unstable.quickemu
+    pkgsUnstable.quickemu
   ];
 
   # Enable libvirtd

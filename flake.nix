@@ -1,13 +1,25 @@
 {
   inputs.nixpkgs.url = "github:NixOS/nixpkgs/nixos-25.11";
   inputs.nixpkgs-unstable.url = "github:NixOS/nixpkgs/nixos-unstable";
-  inputs.home-manager.url = "github:nix-community/home-manager/release-25.11";
+
+  inputs.home-manager = {
+    url = "github:nix-community/home-manager/release-25.11";
+    inputs.nixpkgs.follows = "nixpkgs"; # Use the existing nixpkgs for home-manager rather than pulling in a duplicate
+  };
 
   outputs = {
     self,
     nixpkgs,
+    nixpkgs-unstable,
     ...
-  } @ attrs: {
+  } @ attrs: let
+    system = "x86_64-linux";
+    # Define pkgsUnstable as an output that other modules can consume
+    pkgsUnstable = import nixpkgs-unstable {
+      inherit system;
+      config.allowUnfree = true;
+    };
+  in {
     nixosConfigurations.desktop = nixpkgs.lib.nixosSystem {
       system = "x86_64-linux";
       specialArgs = attrs;
