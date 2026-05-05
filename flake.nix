@@ -31,33 +31,41 @@
 
     nixosConfigurations.desktop = nixpkgs.lib.nixosSystem {
       inherit system;
-      specialArgs = attrs // {
-        inherit pkgsUnstable; # Specifically pass pkgsUnstable to the module as it's not part of `attrs` natively
-      };
+      specialArgs =
+        attrs
+        // {
+          inherit pkgsUnstable; # Specifically pass pkgsUnstable to the module as it's not part of `attrs` natively
+        };
       modules = [./hosts/desktop/default.nix];
     };
 
     nixosConfigurations.framework = nixpkgs.lib.nixosSystem {
       inherit system;
-      specialArgs = attrs // {
-        inherit pkgsUnstable; # Specifically pass pkgsUnstable to the module as it's not part of `attrs` natively
-      };
+      specialArgs =
+        attrs
+        // {
+          inherit pkgsUnstable; # Specifically pass pkgsUnstable to the module as it's not part of `attrs` natively
+        };
       modules = [./hosts/framework/default.nix];
     };
 
     nixosConfigurations.t480 = nixpkgs.lib.nixosSystem {
       inherit system;
-      specialArgs = attrs // {
-        inherit pkgsUnstable; # Specifically pass pkgsUnstable to the module as it's not part of `attrs` natively
-      };
+      specialArgs =
+        attrs
+        // {
+          inherit pkgsUnstable; # Specifically pass pkgsUnstable to the module as it's not part of `attrs` natively
+        };
       modules = [./hosts/t480/default.nix];
     };
 
     nixosConfigurations.x = nixpkgs.lib.nixosSystem {
       inherit system;
-      specialArgs = attrs // {
-        inherit pkgsUnstable; # Specifically pass pkgsUnstable to the module as it's not part of `attrs` natively
-      };
+      specialArgs =
+        attrs
+        // {
+          inherit pkgsUnstable; # Specifically pass pkgsUnstable to the module as it's not part of `attrs` natively
+        };
       modules = [./hosts/vm-test-x/default.nix];
     };
   };

@@ -18,7 +18,7 @@
     };
 
     # Declaratively load a model list
-    loadModels = ["gemma4:31b"];
+    loadModels = ["gemma4:31b" "qwen3.6:27b"];
   };
 
   # Lower the priority of the service to avoid
