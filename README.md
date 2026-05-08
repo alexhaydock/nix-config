@@ -36,3 +36,23 @@ Now we can rebuild and switch into our system and use `nvd diff` to see the diff
 ```sh
 nixos-rebuild switch --refresh --ask-sudo-password --flake github:alexhaydock/nix-config ; nvd diff /run/booted-system /run/current-system
 ```
+
+## Maintenance
+
+### Generating kernel module list for locking
+When enabling the `hardening-lock-modules.nix` module, it is required to generate a list of required kernel modules for inclusion into the relevant `hardware-configuration.nix` for the host.
+
+We can generate a list of currently loaded modules on a running host as follows:
+
+```bash
+cut -d' ' -f1 /proc/modules | sort | awk '
+BEGIN {
+    print "boot.kernelModules = ["
+}
+{
+    printf "  \"%s\"\n", $1
+}
+END {
+    print "];"
+}'
+```

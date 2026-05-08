@@ -22,13 +22,19 @@
     ../../modules/pkgs-tools-general.nix
     ../../modules/pkgs-tools-llm-webui.nix
     ../../modules/pkgs-tools-media.nix
-    ../../modules/sshfs-shares.nix
     ../../modules/sshfs.nix
     ../../modules/symlink-downloads.nix
     ../../modules/tor-browser.nix
     ../../modules/unfree-allow.nix
     ../../modules/users-user.nix
     ../../modules/wireguard.nix
+
+    # Hardening
+    ../../modules/hardening-lock-modules.nix
+    ../../modules/hardening-protect-kernel-image.nix
+
+    # Import system-specific modules
+    ../../modules/sshfs-shares.nix
   ];
 
   # This value determines the NixOS release from which the default

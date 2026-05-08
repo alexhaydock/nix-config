@@ -45,6 +45,9 @@
     ../../modules/wireshark.nix
     ../../modules/yubikey.nix
 
+    # Hardening
+    ../../modules/hardening-protect-kernel-image.nix
+
     # Import system-specific modules
     #../../modules/auditd.nix # Disabled until ruleset is tuned (performance considerations)
     ../../modules/gpu-amd.nix

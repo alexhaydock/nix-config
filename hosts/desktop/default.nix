@@ -36,7 +36,6 @@
     ../../modules/qemu.nix
     ../../modules/serial-devices.nix
     ../../modules/ssh-server.nix
-    ../../modules/sshfs-media.nix
     ../../modules/sshfs.nix
     ../../modules/swapfile.nix
     ../../modules/tor-browser.nix
@@ -47,15 +46,20 @@
     ../../modules/wireshark.nix
     ../../modules/yubikey.nix
 
+    # Hardening
+    ../../modules/hardening-lock-modules.nix
+    ../../modules/hardening-protect-kernel-image.nix
+
     # Import system-specific modules
     #../../modules/auditd.nix # Disabled until ruleset is tuned (performance considerations)
-    ../../modules/gpu-amd.nix
     ../../modules/gpu-amd-rocm.nix
+    ../../modules/gpu-amd.nix
     ../../modules/pkgs-gaming.nix
     ../../modules/pkgs-tools-gamedev.nix
     ../../modules/pkgs-tools-llm-ollama.nix
     ../../modules/pkgs-tools-llm-webui.nix
     ../../modules/splunk-log-forwarding.nix
+    ../../modules/sshfs-media.nix
   ];
 
   # Custom config for my modules below this line
