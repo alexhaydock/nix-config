@@ -12,7 +12,7 @@
 
     # Declare env vars for the systemd service
     environmentVariables = {
-      OLLAMA_KEEP_ALIVE = "-1"; # Keep models loaded indefinitely to prevent SSD grinding
+      OLLAMA_KEEP_ALIVE = "12h"; # Keep models loaded for a long time to prevent SSD grinding
       OLLAMA_MAX_LOADED_MODELS = "1";
       ROCR_VISIBLE_DEVICES = "GPU-58d041af24d7c0b6"; # Limit only to 9070 XT based on uuid from `rocminfo`
     };
