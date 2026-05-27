@@ -47,7 +47,7 @@
     ../../modules/yubikey.nix
 
     # Hardening
-    ../../modules/hardening-lock-modules.nix
+    #../../modules/hardening-lock-modules.nix
     ../../modules/hardening-protect-kernel-image.nix
 
     # Import system-specific modules
