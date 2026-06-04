@@ -1,8 +1,7 @@
 {home-manager, ...}: {
   home-manager.users.user = {pkgs, ...}: {
-    programs.vscode = {
+    programs.vscodium = {
       enable = true;
-      package = pkgs.vscodium; # Use VSCodium rather than VSCode
       profiles.default.extensions = with pkgs.vscode-extensions; [
         bierner.markdown-mermaid
         jnoortheen.nix-ide
