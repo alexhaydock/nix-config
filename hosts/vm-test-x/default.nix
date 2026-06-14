@@ -19,6 +19,7 @@
     ../../modules/nix-optimise.nix
     ../../modules/ntp-janet.nix
     ../../modules/pipewire.nix
+    ../../modules/pkgs-exceptions.nix
     ../../modules/pkgs-tools-general.nix
     ../../modules/pkgs-tools-llm-webui.nix
     ../../modules/pkgs-tools-media.nix

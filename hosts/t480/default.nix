@@ -29,6 +29,7 @@
     ../../modules/nushell.nix
     ../../modules/pipewire.nix
     ../../modules/pkgs-desktop.nix
+    ../../modules/pkgs-exceptions.nix
     ../../modules/pkgs-tools-dev.nix
     ../../modules/pkgs-tools-general.nix
     ../../modules/pkgs-tools-media.nix
